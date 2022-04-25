@@ -5,9 +5,7 @@ An opensource project for the Non Governmental Organisation , Organisation of ch
 We are grateful to the 300+ people from around the world who have contributed to the evolution of this historic document.
 
 <a href="https://github.com/IlahiTechnologies
-/trustourduty/graphs/contributors"><img src="https://opencollective.com/IlahiTechnologies
-/
-trustourduty/contributors.svg?width=890&button=false" /></a>
+/trustourduty/graphs/contributors"><img src="https://github.com/IlahiTechnologies/trustourduty/graphs/contributors.svg?width=890&button=false" /></a>
 
 https://kanbanabhinav.000webhostapp.com/
 
@@ -83,7 +81,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 * **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/IlahiTechnologies/trustourduty/graphs/contributors) who participated in this project.
 
 ## License
 
