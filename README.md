@@ -1,7 +1,7 @@
 
 # Trustourduty
 
-A Backend Portal for non-profit Organization to manage people and accountings and more..
+An Open source Backend Portal for non-profit Organization to manage people and accountings and more..
 
 ## Our Community
 We are grateful to the 300+ people from around the world who have contributed to the evolution of this historic document.
