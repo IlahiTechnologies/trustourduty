@@ -1,9 +1,12 @@
 # trustourduty
 An opensource project for the Non Governmental Organisation , Organisation of charity Purposes , In which all the basic need of the NGO will be done with the help of the technology
-# Project Title
+## Our Community
+We are grateful to the 300+ people from around the world who have contributed to the evolution of this historic document.
 
-One Paragraph of project description goes here
-
+<a href="https://github.com/IlahiTechnologies
+/trustourduty/graphs/contributors"><img src="https://opencollective.com/IlahiTechnologies
+/
+trustourduty/contributors.svg?width=890&button=false" /></a>
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
