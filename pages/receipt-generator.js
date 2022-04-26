@@ -5,6 +5,8 @@ import {
   FormErrorMessage,
   FormHelperText,
 } from "@chakra-ui/react";
+import easyinvoice from 'easyinvoice';
+
 import { getFirestore } from "firebase/firestore";
 import { Input } from "@chakra-ui/react";
 import { Select } from "@chakra-ui/react";
@@ -22,17 +24,62 @@ export default function ReceiptGenerator() {
       onSubmit={async (values, actions) => {
         debugger;
         try {
-          const docRef = await addDoc(collection(db, "receipts"), {
-            purpose: values.purpose,
-            received_by: values.received_by,
-            sum_of: values.sum_of,
-            residing_at: values.residing_at,
-            pan_no: values.pan_no,
-            name: values.name,
-            email: values.email,
-            amount: values.amount,
-          });
-          console.log("Document written with ID: ", docRef, docRef.id);
+          var data = {
+            "images": {
+              "logo": "https://raw.githubusercontent.com/abhinavbansal19961996/trustourduty/main/public/logo-comp.jpeg?raw=true"
+            },
+            "sender": {
+              "company": "TrustOurDuty",
+              "address": "puducherry",
+              "zip": "605001",
+              "city": "puducherry",
+              "country": "India"
+            
+          },
+          "client": {
+            "company": values.name,
+            "address": values.residing_at,
+            "panno": values.pan_no
+        },
+        "information": {
+          // Invoice number
+          "number": "2021.0001",
+          // Invoice data
+          "date": "12-12-2021",
+          "due-date": "Already Paid"
+
+          
+      },
+      "products": [
+        {
+            "quantity": 1,
+            "description": "Donation for" + values.purpose,
+            "price": values.amount,
+            "tax-rate": 0
+        }
+      ]
+      ,
+      "bottom-notice": "Thank you so much for donating for a great cause.",
+      "settings": {
+        "currency": "INR" // See documentation 'Locales and Currency' for more info. Leave empty for no currency.
+    }
+          };
+          const result = await easyinvoice.createInvoice(data);
+          easyinvoice.download('myInvoice.pdf', result.pdf);
+
+
+          // const docRef = await addDoc(collection(db, "receipts"), {
+          //   purpose: values.purpose,
+          //   received_by: values.received_by,
+          //   sum_of: values.sum_of,
+          //   residing_at: values.residing_at,
+          //   pan_no: values.pan_no,
+          //   name: values.name,
+          //   email: values.email,
+          //   amount: values.amount,
+          // });
+          // console.log("Document written with ID: ", docRef, docRef.id);
+
         } catch (e) {
           console.error("Error adding document: ", e);
         }

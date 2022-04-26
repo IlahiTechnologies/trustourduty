@@ -13,6 +13,7 @@
     "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "easyinvoice": "^2.3.0",
     "firebase": "^9.6.11",
     "formik": "^2.2.9",
     "framer-motion": "^6",
