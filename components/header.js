@@ -28,8 +28,8 @@ const Header = () => {
         <HStack spacing="24px">
           <Image boxSize="90px" src="/logo-comp.jpeg" alt="Dan Abramov" />
        
-          <Link color={"rebeccapurple"}>Generate Receipts</Link>
-          <Link color={"rebeccapurple"}>List Receipts</Link>
+          <Link color={"rebeccapurple"} href="/receipt-generator">Generate Receipts</Link>
+          <Link color={"rebeccapurple"} href="/list-receipt">List Receipts</Link>
         </HStack>
       </Box>
       <Box bg="tomato" w="10%" p={4} color="white">
