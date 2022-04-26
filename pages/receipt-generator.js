@@ -68,17 +68,17 @@ export default function ReceiptGenerator() {
           easyinvoice.download('myInvoice.pdf', result.pdf);
 
 
-          // const docRef = await addDoc(collection(db, "receipts"), {
-          //   purpose: values.purpose,
-          //   received_by: values.received_by,
-          //   sum_of: values.sum_of,
-          //   residing_at: values.residing_at,
-          //   pan_no: values.pan_no,
-          //   name: values.name,
-          //   email: values.email,
-          //   amount: values.amount,
-          // });
-          // console.log("Document written with ID: ", docRef, docRef.id);
+          const docRef = await addDoc(collection(db, "receipts"), {
+            purpose: values.purpose,
+            received_by: values.received_by,
+            sum_of: values.sum_of,
+            residing_at: values.residing_at,
+            pan_no: values.pan_no,
+            name: values.name,
+            email: values.email,
+            amount: values.amount,
+          });
+          console.log("Document written with ID: ", docRef, docRef.id);
 
         } catch (e) {
           console.error("Error adding document: ", e);
