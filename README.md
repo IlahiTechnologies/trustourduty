@@ -1,7 +1,7 @@
 
 # Trustourduty
 
-An Open source Backend Portal for non-profit Organization to manage people and accountings and more..
+An Open source Backend Portal for non-profit Organization to manage people and accountings https://www.trustourduty.org/
 
 ## Why trustourduty repo is under ilahitechnologies github Organization.
 
