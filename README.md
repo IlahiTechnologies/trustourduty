@@ -3,16 +3,10 @@
 
 An Open source Backend Portal for non-profit Organization to manage people and accountings and more..
 
-## Our Community
-We are grateful to the 300+ people from around the world who have contributed to the evolution of this historic document.
+## Why trustourduty repo is under ilahitechnologies github Organization.
 
-<a href="https://github.com/IlahiTechnologies
-/trustourduty/graphs/contributors"><img src="https://github.com/IlahiTechnologies/trustourduty/graphs/contributors.svg?width=890&button=false" /></a>
+TrustOurDuty Organization is founded and run by people in ilahitechnologies.
 
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ## Built With
 
@@ -27,25 +21,19 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
-
-## About the Application
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+Install NodeJS ( Latest ) and NPM
+
+
+Open your favourite shell and run the development server:
 
 ```bash
+git clone https://github.com/IlahiTechnologies/trustourduty
+cd trustourduty
+npm install
 npm run dev
-# or
-yarn dev
 ```
 
 
