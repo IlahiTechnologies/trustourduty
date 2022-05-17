@@ -9,15 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "daisyui": "^2.14.3",
-=======
     "@chakra-ui/icons": "^1.1.7",
     "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "easyinvoice": "^2.3.0",
->>>>>>> dev
     "firebase": "^9.6.11",
     "formik": "^2.2.9",
     "framer-motion": "^6",
@@ -29,7 +25,8 @@
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.3.0",
     "react-table": "^7.7.0",
-    "reactjs-navbar": "^1.0.2"
+    "reactjs-navbar": "^1.0.2",
+    "daisyui": "^2.14.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
