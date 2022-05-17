@@ -11,7 +11,7 @@ export const LoggedOutHeaderRight = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
   const kk =(e) => {
     e.preventDefault()
-    router.push('/login');
+    router.push('/index');
   }
 
     return (

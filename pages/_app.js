@@ -15,14 +15,13 @@ const theme = extendTheme({ colors })
 
 function MyApp({ Component, pageProps }) {
 
+  console.log(pageProps);
+
   return (
     <ChakraProvider theme={theme}>
-     
       <Header/>
- 
-
       <Component {...pageProps} />
-      </ChakraProvider>);
+    </ChakraProvider>);
 }
 
 export default MyApp
