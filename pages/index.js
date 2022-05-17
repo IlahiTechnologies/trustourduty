@@ -1,36 +1,25 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
-
+import {firebase, auth} from '../app/firebaseApp';
+import React, { useState } from "react";
 export default function Home() {
+  let [isLoggedIn, setIsLoggedIn] = useState(false);
+  let [name, setName] = useState("");
+  
+  firebase.auth().onAuthStateChanged(function(user) {
+    console.log(user);
+    if (user) {
+      setIsLoggedIn(true)
+      setName(user.displayName)
+      // User is signed in.
+    } else {
+      // No user is signed in.
+      setIsLoggedIn(false)
+      // setName(user.displayName)
+    }
+  });
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <meta name="description" content="trustourduty" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="">Trust Our Duty</a>
-        </h1>
-        <Link href="/receipt"><a>Go to Receipt</a></Link>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
+    <>
+    {isLoggedIn ? "Welcome " + name : "Please Log In"} 
+  
+    </>
   )
 }
